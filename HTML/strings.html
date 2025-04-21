@@ -1,0 +1,87 @@
+
+<!-- This tells the browser that this is an HTML5 webpage -->
+<!DOCTYPE html>
+<!-- He next HTML tag whe need to include is the html tag; attribute of lang is language and the value is en for English -->
+<html lang="en">
+<!-- In the head tag is where I add all of my meta and link tags things that the website need to but not the viewer of the web page -->
+
+<head>
+    <!-- this meat tag let the website know that any character from all language can be made. -->
+    <meta charset="UTF-8" />
+    <!-- This meta tag make sure that the page doesn't look weird on any device that you may use. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- this is the title of the page that the viewer will see -->
+    <title> Secret Message</title>
+    <!-- This is the way to add a link you external style sheet so that you can add styling to your web page -->
+    <link href="../CSS/smessage-style.css" rel="stylesheet">
+    <!-- This is the end of the head tag  -->
+</head>
+<!-- I the body is the only place where people/ viewer can see you code. This is where we are going to have all of the content in the website.-->
+
+<body>
+    <!-- container for introductory content or a set of navigational links.-->
+    <header>
+        <!-- this is a heading tag that goes from h1- h6 -->
+        <h1>Welcome to My Website</h1>
+        <!-- This is a navigation tag that a way to navigate through a website. -->
+        <nav>
+            <h2>Navigation</h2>
+            <a href="../HTML/index.html">Home</a><br />
+            <a href="../HTML/boards.html">Boards</a><br />
+            <a href="../HTML/game.html">Game</a><br />
+            <a href="../HTML/strings.html"> Secret Message</a><br>
+            <a href="../guessingGame/guessingGame.html"> Guessing Game</a><br>
+          </nav>
+    </header>
+
+
+
+    <h2> Welcome to the Secret Message Revealer! </h2>
+
+
+    <p> Please follow the set instructions to see the secret message</p>
+
+    <form>
+        <label for="message">
+            Please enter your name to see the secret message:
+        </label>
+        </br>       
+        </br>
+        <!-- The default value of a input is text -->
+        <!-- Add separate text box inputs for the user's first and last names. -->
+        <input type="text" for="message" name="fname" id="firstName" placeholder="First Name" max="10" min="1" required/>
+        <input type="text" for="message" name="lname" id="lastName" placeholder="Last Name" max="10" min="1" required />
+        </br>           
+        </br>
+        <!-- A text box input for the user's zip code -->
+        <label for="zip-code">
+            Please enter your zip code:
+        </label>
+        <input type="text" name="zip-code" id="zip-code" max="5" min="1" placeholder="Zip Code" required/>
+        </br>
+        </br>
+    </form>
+    <div id="messageShower"> </div>
+
+
+    <button onclick="secretMessage()"> Submit </button>
+
+    <!-- <p>Enter a word or phrase to check if it is a palindrome:</p>
+    <input type="text" id="palindrome" name="palindrome"/>
+    <button onclick="checkPalindrome()">Check</button>
+    <p id="result"></p> -->
+
+    
+
+    <footer>
+        Jerrod Bolton <br>
+        University of Advancing Technology <br>
+        2625 W Baseline Rd, <br>
+        Tempe, AZ 85283 <br>
+    </footer>
+
+<!-- This is here to link a JS Page -->
+<script src="../ JS/smessage.js"> </script>
+</body>
+
+</html> 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+    <link href="../CSS/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- container for introductory content or a set of navigational links.-->
+    <header>
+        <!-- this is a heading tag that goes from h1- h6 -->
+        <h1> Welcome to the Guessing Game </h1>
+        <!-- This is a navigation tag that a way to navigate through a website. -->
+        <nav>
+            <h2>Navigation</h2>
+            <a href="../HTML/index.html">Home</a><br />
+            <a href="../HTML/boards.html">Boards</a><br />
+            <a href="../HTML/game.html">Game</a><br />
+            <a href="../HTML/strings.html"> Secret Message</a><br>
+            <a href="../guessingGame/guessingGame.html"> Guessing Game</a><br>
+        </nav>
+    </header>
+    <h2> Guess How Many Jelly Beans Are in the JellyBeans</h2>
+    <div class="container">
+        <img src="./jellyBeans.png" alt="This is a pic on a jar of jelly beans" />
+        <label for="guessInput">Enter your guess:</label>
+        <!-- This is a label tag that is used to define a label for an input element. -->
+        <input type="text" name="guessInput" id="guessInput" placeholder="Enter your guess here" required />
+        <button onclick="aNumberGuessed()"">Guess</button>
+
+        <p id="guessResult"></p>
+
+    </div>
+
+    <script src="guessingGame.js"></script>
+
+    <footer>
+        Jerrod Bolton <br> 
+        University of Advancing Technology <br>
+        2625 W Baseline Rd, <br>
+        Tempe, AZ 85283 <br>
+    </footer>
+
+
+</body>
+
+</html>

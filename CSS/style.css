@@ -1,0 +1,93 @@
+
+html{
+  scroll-behavior: smooth;
+  scrollbar-color: rgb(124, 82, 119) rgb(124, 82, 119);
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(124, 82, 119);
+  color: Black;
+}
+
+nav {
+  height: 600px;
+  width: 200px;
+  float: left;
+  padding: 5px;
+  line-height:30px;
+}
+
+footer {
+  text-align: center;
+  margin-right: 200px;
+}
+
+.memeImage{ 
+  margin: 50px;
+  margin-top: auto;
+  margin-bottom: 20px;
+  width: 350px;
+  height: 350px;
+  border-radius: 3%;
+}
+
+audio{
+  float: left;
+  padding: 0px, 2px, 0px, 2px;
+  line-height:30px;
+}
+
+
+header {
+  text-align: center;
+}
+
+ button{
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+  border-radius: 10%;
+  cursor: pointer;
+  font-size: 20px;
+ }
+.container{
+  display: flex;
+  width: 500px;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px;;
+}
+table{
+  margin: auto;
+  width: 500px;
+  height: 500px;
+}
+table{
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(124, 82, 119);
+}
+.link{
+  text-decoration: none;
+  color: rgb(13, 245, 86);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+th{
+  background-color: rgb(124, 82, 119);
+  color: black; 
+  font-size: 20px;
+}
+td{
+  background-color: rgb(124, 82, 119);
+  color: black;
+  font-size: 20px;
+}
+
+footer{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building a Game</title>
+    <link href="../CSS/style.css" rel="stylesheet"
+  </head>
+  <body>
+    <!-- container for introductory content or a set of navigational links.-->
+    <header>
+      <!-- this is a heading tag that goes from h1- h6 -->
+      <h1>Welcome to my game</h1>
+      <!-- This is a navigation tag that a way to navigate through a website. -->
+      <nav>
+        <h2>Navigation</h2>
+        <a href="../HTML/index.html">Home</a><br />
+        <a href="../HTML/boards.html">Boards</a><br />
+        <a href="../HTML/game.html">Game</a><br />
+        <a href="../HTML/strings.html"> Secret Message</a><br>
+        <a href="../guessingGame/guessingGame.html"> Guessing Game</a><br>
+      </nav>
+    </header>
+    
+
+    <h2> Welcome to the Rock, Paper, Scissors Game! </h2>
+    <!-- This is the Instructions that the player need to know so that they can play.-->
+    <p> In this game we are going to be playing a fun game of Rock, Paper , Scissors in the box below please in one word of your choose. You will be playing against me. Wish you the best</p>
+
+    <!-- This is labeling the input that you are adding  -->
+        <label for="shot">
+            Rock, Paper, OR Scissors:
+        </label>
+         
+        <br>
+        <br> 
+        <!-- this is the location where player add this answers -->
+        <input  type = "text" for="shot" name= "shot" id="thePlayerShot" placeholder="Rock, Paper, OR Scissors" value="" />
+
+        <br>
+        <br>
+        <!-- This button calls the function in the main.js -->
+        <button onclick="gamePlay()"> Shot </button>
+
+        <h3 id="printMyShot"></h3>
+        <p id="asksTheQuestion"></p>
+
+        
+
+
+
+    <footer>
+        Jerrod Bolton <br> 
+        University of Advancing Technology <br>
+        2625 W Baseline Rd, <br>
+        Tempe, AZ 85283 <br>
+    </footer>
+
+    <script src="../ JS/game.js"></script>
+
+
+  </body>
+</html>
