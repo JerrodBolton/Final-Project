@@ -1,32 +1,30 @@
-# Final Project
-
-This is my Final Project.
+# Assignment 14.1: Final Project - A Web Presence
 
 ## Objectives
-- All pages after the landing page should be able to navigate back to the landing page.
-- Use CSS to make your web application look and feel professional.
+- Ensure all pages after the landing page can navigate back to the landing page.
+- Use CSS to create a professional look and feel for your web application.
 - Understand the differences between Inline, Internal, and External CSS.
 
 ## Requirements
-1. Create a landing page, and from this page, you should be able to navigate to all of your other pages:
-    - Meme
-    - Game
-    - Palindrome
-    - User Input/Validation
-    - Objectives Page
-    - Table
-2. Every page must be able to navigate back to the landing page.
-3. Each page should link to a CSS file and use styles defined in it.
-4. Your website should look good and be fully functional when viewed through the GitHub HTML previewer: [GitHub HTML Previewer](https://htmlpreview.github.io/).
+1. **Landing Page**:  
+    - Create a landing page that allows navigation to all other pages (e.g., meme, game, palindrome, user input/validation, objectives page, table).  
+    - Ensure every page can navigate back to the landing page.
 
-### Notes:
-- You **MUST** use `innerHTML` for user validation and palindrome messages (no alerts).
-- You **MUST** use a form with a submit button for all user input.
-- You **MUST NOT** use action listeners.
-- Remove **ALL** unused and example code (not commented out).
-- You **CANNOT** have JavaScript functions in HTML.
+2. **CSS Styling**:  
+    - Link each page to a CSS file and apply styles defined in it.  
+    - Your website should look professional and function properly when viewed through the [GitHub HTML previewer](https://htmlpreview.github.io/).
+
+3. **JavaScript Usage**:  
+    - Use `innerHTML` for user validation and palindrome messages (no alerts).  
+    - Use a form with a submit button for all user input.  
+    - Do not use action listeners.  
+    - Avoid placing JavaScript functions directly in HTML.
+
+4. **Code Cleanup**:  
+    - Remove all unused and example code (do not comment it out).
 
 ## Deliverables
-1. Submit the GitHub repository address. Ensure it includes all image and sound files required to run your project.
-2. Submit screenshots of your code running.
-3. To receive full points, follow the rubric and submit your answers in the submission area by the due date.
+- Submit the GitHub repository address, ensuring all required image and sound files are included.
+- Provide screenshots of your code running.
+
+> **Note**: To receive full points, follow the rubric and submit your answers in the submission area by the due date.

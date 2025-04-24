@@ -1,7 +1,7 @@
 // Jerrod Bolton 02/17/25
 
 let secretMessageReviewed = () => {
-  let secretMessage = "Welcome to the future";
+  let secretMessage = "Welcome to the future of AI and Technology!";
   document.getElementById("messageShower").innerHTML = secretMessage;
   
   //console.log(secretMessage);
@@ -57,13 +57,6 @@ let verification = () => {
     alert("I would retry the process again your input is invalid");
   }
 };
-
-// // If the inputs are valid, show the user the secret message from the website.
-// // at least 1 creative element – images, fonts, background color, etc.
-////  Create a nice look and feel for the user and make a great user experience!
-//Comment above almost every line of your code, both HTML and JavaScript!
-//// Put a comment at the top of your HTML file with your name in it.
-// Take one or more screen prints of your application running.
 
 // I am make this function to call the secret message from the website
 let secretMessage = () => {
