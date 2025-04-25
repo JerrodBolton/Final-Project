@@ -10,14 +10,24 @@ body {
   color: Black;
 }
 
-nav {
+nav{
   height: 600px;
   width: 200px;
   float: left;
   padding: 5px;
   line-height:30px;
-}
 
+}
+nav > a{
+  text-decoration: none;
+  color:1ad1ed;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+ nav p {
+  padding: 20px;
+ }
 footer {
   text-align: center;
   margin-right: 200px;

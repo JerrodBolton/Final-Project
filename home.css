@@ -1,0 +1,38 @@
+/* This is the rest version */
+*{
+ margin: 0;
+ padding: 0;
+ 
+}
+
+img{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 19px;
+    border-radius: 50px;
+}
+
+.info-title{
+    color: #000;
+    font-size: 30px;
+}
+
+p{
+    color: #000;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.container p{
+    box-shadow: #1ad1ed 0px 0px 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-title, .game-title, .secretMessage{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
