@@ -26,6 +26,7 @@
         <!-- This is a navigation tag that a way to navigate through a website. -->
         <nav>
             <h2>Navigation</h2>
+            <a href="../index.html"> Home</a><br/>
             <a href="../meme.html">Meme</a><br />
             <a href="./boards.html">Boards</a><br />
             <a href="./game.html">Game</a><br />
@@ -50,7 +51,8 @@
         <!-- The default value of a input is text -->
         <!-- Add separate text box inputs for the user's first and last names. -->
         <input type="text" for="message" name="fname" id="firstName" placeholder="First Name" max="10" min="1" required/>
-        <input type="text" for="message" name="lname" id="lastName" placeholder="Last Name" max="10" min="1" required />
+        <input type="text" for="messag e="lname" id="lastName" placeholder="Last Name" max="10" min="1" required /> </br></br>
+        <input type="text" for="pWord" name="pWord" id="pWord" placeholder="Palindrome Words" max="10" min="1" required />
         </br>           
         </br>
         <!-- A text box input for the user's zip code -->
@@ -65,12 +67,13 @@
 
 
     <button onclick="secretMessage()"> Submit </button>
+    <button onclick="palindromeWord()"> Palindrome Checker </button>
 
     <!-- <p>Enter a word or phrase to check if it is a palindrome:</p>
     <input type="text" id="palindrome" name="palindrome"/>
     <button onclick="checkPalindrome()">Check</button>
     <p id="result"></p> -->
-
+   <div id="result"></div>
     
 
     <footer>

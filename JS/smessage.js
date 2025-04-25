@@ -1,17 +1,17 @@
-// Jerrod Bolton 02/17/25
+// Jerrod Bolton 04/24/25
 
 let secretMessageReviewed = () => {
   let secretMessage = "Welcome to the future of AI and Technology!";
   document.getElementById("messageShower").innerHTML = secretMessage;
-  
+
   //console.log(secretMessage);
   document.getElementById("messageShower").style.color = "rgb(204, 51, 255)";
   document.getElementById("messageShower").style.fontSize = "50px";
-  document.getElementsByTagName("body")[0].style.backgroundColor = "rgb(0, 0, 0)";
+  document.getElementsByTagName("body")[0].style.backgroundColor =
+    "rgb(0, 0, 0)";
   document.getElementsByTagName("body")[0].style.color = "rgb(204, 51, 255)";
-//   document.getElementByTagName("body")[1].style.color = "rgb(204, 51, 255)";
+  //   document.getElementByTagName("body")[1].style.color = "rgb(204, 51, 255)";
   return secretMessage;
-  
 };
 
 // Create a strings.html page.
@@ -22,8 +22,8 @@ let theName = () => {
   let firstName = document.getElementById("firstName").value;
   let lastName = document.getElementById("lastName").value;
   //  this was test to see if you have done the right thing
-  // console.log(`The first name of the user is: ${firstName}`);
-  //console.log(`The last name of the user is: ${lastName}`);
+  console.log(`The first name of the user is: ${firstName}`);
+  console.log(`The last name of the user is: ${lastName}`);
   theUerName = firstName + " " + lastName;
   // console.log(theUerName);
   return theUerName;
@@ -67,41 +67,42 @@ let secretMessage = () => {
   verification();
 };
 
+let palindromeResult = document.getElementById("result");
+let word = document.getElementById("pWord").value;
+
 // I need to make a function that will collect the values of the words that someone types in the input field
 
 // let palindromeWord = document.getElementById("palindrome").value;
 
-let word = prompt("please a word inside the prompt to find if it is a palindrome type 'exit' to leave the program");
-//  // Create a new page or add your code to the strings.html from a previous assignment.
-// Create a loop and add a prompt for the user to enter a string.
-//  This is check to see what type of data the user is inputting
-//  console.log(typeof(palindromeWord));
-//  this is make the loop to check if the word is a palindrome
-//  this is a while loop that checks if they type the word exit to leave the program
- console.log(word.toLowerCase());
- 
- while ( word.toLowerCase() !== "exit") {
-  // this is make a var that will take the word and split it into an array and then reverse it and then join it back together
+//! If the string is not exit it will continue to run
+palindromeWord = () => {
+  let palindromeResult = document.getElementById("result");
+  let word = document.getElementById("pWord").value;
+  // console.log("The word is: " + word);
+
+  //  this is going to make ths word lowercase
   let reverseWord = word.split("").reverse().join("");
   // this is a check to see what the word is a palindrome by is the word the same as the reverse word
-  if (word === reverseWord) {
-    // if so then it will alert the user that the word is a palindrome
-    alert("This word is a palindrome");
-  }  // if not then it will a alert the user that the word is not a palindrome
+  if (word === "") {
+    // if so then it will alert the user t hat the word is a palindrome
+    palindromeResult.innerHTML = "Please enter a word";
+    palindromeResult.style.color = "red";
+    palindromeResult.style.fontSize = "20px"; 
+    palindromeResult.style.margin = "20px";
+  } 
+  else if (word === reverseWord) {
+    palindromeResult.innerHTML = "This word is a palindrome";
+    palindromeResult.style.color = "green";
+    palindromeResult.style.fontSize = "20px";
+    palindromeResult.style.margin = "20px";
+    
+  } 
   else {
-    alert("This word is not a palindrome");
-  }
-//this will ask the user repeatedly to enter a word until they type exit
-  word = prompt("please a word inside the prompt to find if it is a palindrome type 'exit' to leave the program");
+    palindromeResult.innerHTML = "This word is not palindrome";
+    palindromeResult.style.color = "red";
+    palindromeResult.style.fontSize = "20px";
+    palindromeResult.style.margin = "20px";
+    // alert("This word is not a palindrome");
+  } 
+  //this will ask the user repeatedly to enter a word until they type exit
 };
-
-// After you notify the user if the string was a palindrome or not, give the user the option of entering another word.
-// If the user is done entering words, exit out of the loop.
-
-// Check if the string is spelled the same forwards and backward (hint, remove the spaces before checking).
-
-// Have at least 2 creative elements – images, fonts, background color, etc. 
-// Create a nice look and feel for the user and make a great user experience!
-// Comment above almost every line of your code, both HTML and JavaScript!
-// Put a comment at the top of your HTML file with your name in it.
-// Take one or more screen prints of your application running.
