@@ -8,7 +8,7 @@ function randomNumber() {
   let x = Math.floor((Math.random() * 10) + 1); 
   // This is going to return a whole number
   return x;
-  
+
   }
   
   function  printOut(){
@@ -27,21 +27,31 @@ function randomNumber() {
     //  this is printing in the clg the Lower Case Word
     // console.log(theShot === "rock");
     let lower = theShot.toLowerCase();
-    
+    if(lower === ""){
+      // this is going to print if the user does not put anything in the input
+      document.getElementById("printMyShot").innerHTML = "Please enter a value";
+      // This is going to print b/c you want to do three rounds
+      document.getElementById("asksTheQuestion").innerHTML = printOut();
+    }
+    else{
      if(lower === "rock"){
           if(randomNumber() >= 5){
             //  this is going to print the value I the person won 
-              document.getElementById("printMyShot").innerHTML = "You won! I picked scissors";
+            document.getElementById("printMyShot").innerHTML = "You won! I picked scissors";
             // This is going to print b/c you want to do three rounds
             document.getElementById("asksTheQuestion").innerHTML = printOut();
             // console.log(`The value of the random #  is ${randomNumber()}`);
           }
-          else if(randomNumber() <= 5){
+          else if(randomNumber() < 8){
               //  this is going to print the value I the person won 
               document.getElementById("printMyShot").innerHTML = "You lost! I picked paper";
               // This is going to print b/c you want to do three rounds
               document.getElementById("asksTheQuestion").innerHTML = printOut();
             }
+          else{
+            // this wil only print if the random number is greater than 8 b/c it gone to 10
+            document.getElementById("printMyShot").innerHTML = "You it a tie! I picked rock";
+          }
       }
        else if  (lower === "paper"){
         if(randomNumber() >= 5){
@@ -50,11 +60,15 @@ function randomNumber() {
           // This is going to print b/c you want to do three rounds
           document.getElementById("asksTheQuestion").innerHTML = printOut();
         }
-        else if(randomNumber() <= 5){
+        else if(randomNumber() < 8){
           //  this is going to print the value I the person won 
           document.getElementById("printMyShot").innerHTML = "You lost! I picked scissors";
           // This is going to print b/c you want to do three rounds
           document.getElementById("asksTheQuestion").innerHTML = printOut();
+        }
+        else{
+          // this wil only print if the random number is greater than 8 b/c it gone to 10
+          document.getElementById("printMyShot").innerHTML = "You it a tie! I picked paper";
         }
       }
       else if (lower === "scissors"){
@@ -64,14 +78,16 @@ function randomNumber() {
           // This is going to print b/c you want to do three rounds
           document.getElementById("asksTheQuestion").innerHTML = printOut();
         }
-        else if(randomNumber() >= 5){
+        else if(randomNumber() > 5){
           //  this is going to print the value I the person won 
           document.getElementById("printMyShot").innerHTML = "You lost! I picked rock";
           // This is going to print b/c you want to do three rounds
           document.getElementById("asksTheQuestion").innerHTML = printOut();
         }
       }
-      else {
-        document.getElementById("printMyShot").innerHTML = "You put something else or I'm not sure what that is";
+      else{
+        // this wil only print if the random number is greater than 8 b/c it gone to 10
+        document.getElementById("printMyShot").innerHTML = "You it a tie! I picked scissors";
       }
+    }
   }

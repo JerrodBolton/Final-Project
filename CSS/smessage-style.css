@@ -10,6 +10,7 @@ body {
     line-height:30px;
     font-size: 20px;
   }
+
   button{
     background-color: rgba(0, 0, 0, 0.1);
     color: black;
@@ -17,9 +18,11 @@ body {
     cursor: pointer;
     font-size: 20px;
    }
+   
    input{
       font-size: 20px;
       border-radius: 4%;
+      width: 160px;
    }
    h2, p, label{
       color: black;
